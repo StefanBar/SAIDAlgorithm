@@ -1,0 +1,35 @@
+h1. South African ID Number Algorithm
+
+A JavaScript algorithm to determine if a South African ID number is valid.
+
+h2. Features
+
+* Returns a <strong>object</strong> with the <em>Valid</em>, <em>Date Of Birth</em> and <em>Gender</em> details.
+
+h2. Usage
+
+<pre><script type="text/javascript" src="getSAID.js"></script>
+<script type="text/javascript">
+	
+	// check ID number
+	var identity = getSAID("xxxxxxxxxxxxx");
+	
+	if (identity) {
+		// returns a object if valid
+		alert(
+			"Valid: " + identity.valid + 
+			"\nDate Of Birth: " + identity.dob + 
+			"\nGender: " + identity.gender
+		);
+	} else {
+		// otherwise returns false
+		alert("ID number is invalid.");
+	}
+	
+</script>
+</pre>
+
+h2. Change Log
+
+h3. Version 1.0
+* First official release
